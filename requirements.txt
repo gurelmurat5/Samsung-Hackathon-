@@ -1,0 +1,14 @@
+# Digital Zen-Coach — Python dependencies
+# Core app framework
+streamlit>=1.38.0,<2.0.0
+
+# Google Gemini SDK (current, actively-maintained package — NOT google-generativeai)
+google-genai>=1.20.0,<3.0.0
+
+# Direct dependencies of google-genai, pinned explicitly for reproducible
+# builds across teammates' machines (validation, retry/backoff, HTTP, and
+# platform-detection support used internally by the SDK's client + cascade)
+pydantic>=2.6.0,<3.0.0
+tenacity>=8.2.0,<10.0.0
+requests>=2.31.0,<3.0.0
+distro>=1.9.0,<2.0.0
